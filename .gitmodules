@@ -1,0 +1,15 @@
+[submodule "lib/core"]
+	path = lib/core
+	url = ../modules/lib_core
+[submodule "lib/cppunit"]
+	path = lib/cppunit
+	url = ../modules/lib_cppunit
+[submodule "lib/xerces"]
+	path = lib/xerces
+	url = ../modules/lib_xerces
+[submodule "Fibonacci"]
+	path = Fibonacci
+	url = ../modules/Fibonacci
+[submodule "FibonacciTest"]
+	path = FibonacciTest
+	url = ../modules/FibonacciTest
