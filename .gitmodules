@@ -7,9 +7,9 @@
 [submodule "lib_core"]
 	path = lib_core
 	url = https://github.com/iparau/fibo-lib_core.git
-[submodule "Fibonacci"]
-	path = Fibonacci
+[submodule "fibonacci"]
+	path = fibonacci
 	url = https://github.com/iparau/fibo-fibonacci.git
-[submodule "FibonacciTest"]
-	path = FibonacciTest
+[submodule "fibonaccitest"]
+	path = fibonaccitest
 	url = https://github.com/iparau/fibo-fibonaccitest.git

@@ -11,6 +11,7 @@ dependancies = {
 	'lib_cppunit' : [],
 	'lib_xerces' : [],
 	'lib_core' :  ['lib_cppunit','lib_xerces'],
+	'libs' : ['lib_core'],
 	'fibonacci' : ['lib_core'],
 	'fibonaccitest' : ['lib_core'],
 	'all': ['fibonacci', 'fibonaccitest']
@@ -22,16 +23,18 @@ modules_list = {
 	'lib_cppunit' : [('lib_cppunit', 'lib_cppunit.pro', True, True, False, False)],
 	'lib_xerces' :  [('lib_xerces', 'lib_xerces.pro', True, True, False, False)],
 	'lib_core' : [('lib_core', 'lib_core.pro', True, True, False, False)],
-	'fibonacci' : [('Fibonacci', 'fibonacci.pro', True, True, False, False),
-			('', 'Fibonacci.pro', False, True, False, False)],
-	'fibonaccitest' : [('FibonacciTest', 'fibonaccitest.pro', True, True, False, False),
-				('', 'FibonacciTest.pro', False, True, False, False)]
+	'libs' : [('', 'ctc_libs.pro', False, True, False, False)],
+	'fibonacci' : [('fibonacci', 'fibonacci.pro', True, True, False, False),
+			('', 'ctc_fibonacci.pro', False, True, False, False)],
+	'fibonaccitest' : [('fibonaccitest', 'fibonaccitest.pro', True, True, False, False),
+				('', 'ctc_fibonaccitest.pro', False, True, False, False)]
 	}
 
 builded = {
 	'lib_cppunit' : False,
 	'lib_xerces' :  False,
 	'lib_core' : False,
+	'libs' : False,
 	'fibonacci' : False,
 	'fibonaccitest' : False
 	}
@@ -41,8 +44,9 @@ modules_output_files = {
 	'lib_cppunit' : [(False, '', '', '', False, False)],
 	'lib_xerces' :  [(False, '', '', '', False, False)],
 	'lib_core' : [(False, '', '', '', False, False)],
-	'fibonacci' : [(True, 'Fibonacci.exe', 'Fibonacci', 'Fibonacci', False, False)],
-	'fibonaccitest' : [(True, 'FibonacciTest.exe', 'FibonacciTest', 'FibonacciTest', False, False)]
+	'libs' : [(False, '', '', '', False, False)],
+	'fibonacci' : [(True, 'fibonacci.exe', 'fibonacci', 'fibonacci', False, False)],
+	'fibonaccitest' : [(True, 'fibonaccitest.exe', 'fibonaccitest', 'fibonaccitest', False, False)]
 	}
 
 # key file, key pass, win32 path, mac path, linux path
