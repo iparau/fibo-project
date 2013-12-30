@@ -1,12 +1,12 @@
 
 TEMPLATE = subdirs
-SUBDIRS += ./lib/core \
-        ./lib/cppunit \
-	./lib/xerces \
+SUBDIRS += lib/core \
+			lib/cppunit \
+			lib/xerces
 
 # build must be last:
 CONFIG += ordered
-SUBDIRS += ./Fibonacci
+SUBDIRS += Fibonacci
 
 core.depends = cppunit
 core.depends = xerces

@@ -22,7 +22,7 @@ modules_list = {
 	'lib_cppunit' : [('lib/cppunit', 'lib_cppunit.pro', True, True, False, False)],
 	'lib_xerces' :  [('lib/xerces', 'lib_xerces.pro', True, True, False, False)],
 	'lib_core' : [('lib/core', 'lib_core.pro', True, True, False, False)],
-	'fibonacci' : [('Fibonacci', 'fibonacci.pro', True, True, True, False),
+	'fibonacci' : [('Fibonacci', 'fibonacci.pro', True, True, False, False),
 			('', 'Fibonacci.pro', False, True, False, False)],
 	'fibonaccitest' : [('FibonacciTest', 'fibonaccitest.pro', True, True, False, False),
 				('', 'FibonacciTest.pro', False, True, False, False)]
@@ -208,9 +208,6 @@ def do_module_build(moduletobuild):
 			vcBuildCmd = 'MSBuild.exe '
 			vcBuildParam = '/m:4 /Verbosity:normal /DetailedSummary'
 
-			if TESTING_LIBRARY:
-				buildParam += ' CONFIG+=testlib'
-
 			for moduleitem in modules_list[moduletobuild]:
 				subdir = CTC_ROOT + os.sep + moduleitem[0]
 
@@ -237,13 +234,13 @@ def do_module_build(moduletobuild):
 					if VCPROJ:
 						print "Generating the vcxproj files"
 						cmdline = 'cd ' + subdir
-						cmdline += ' && ' + QMAKE + ' -tp vc' + buildParam + ' ' + profile
+						cmdline += ' && ' + QMAKE + ' -tp vc ' + profile
 
 						do_exec(cmdline, True)
 
 					#create the MAKEFILE
 					cmdline = 'cd ' + subdir
-					cmdline += ' && ' + QMAKE + ' -o ' + buildMakeFile + buildParam + ' ' + profile
+					cmdline += ' && ' + QMAKE + ' -o ' + buildMakeFile + ' ' + profile
 
 					do_exec(cmdline, True)
 
