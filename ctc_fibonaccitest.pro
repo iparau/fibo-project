@@ -6,9 +6,9 @@ SUBDIRS += lib_cppunit \
 
 # build must be last:
 CONFIG += ordered
-SUBDIRS += FibonacciTest
+SUBDIRS += fibonaccitest
 
 lib_core.depends = lib_cppunit
 lib_core.depends = lib_xerces
-FibonacciTest.depends = lib_core
+fibonaccitest.depends = lib_core
 
