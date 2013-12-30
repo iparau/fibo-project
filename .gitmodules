@@ -1,15 +1,15 @@
 [submodule "lib_cppunit"]
 	path = lib_cppunit
-	url = ../modules/lib_cppunit
+	url = https://github.com/iparau/fibo-lib_cppunit.git
 [submodule "lib_xerces"]
 	path = lib_xerces
-	url = ../modules/lib_xerces
+	url = https://github.com/iparau/fibo-lib_xerces.git
 [submodule "lib_core"]
 	path = lib_core
-	url = ../modules/lib_core
+	url = https://github.com/iparau/fibo-lib_core.git
 [submodule "Fibonacci"]
 	path = Fibonacci
-	url = ../modules/Fibonacci
+	url = https://github.com/iparau/fibo-fibonacci.git
 [submodule "FibonacciTest"]
 	path = FibonacciTest
-	url = ../modules/FibonacciTest
+	url = https://github.com/iparau/fibo-fibonaccitest.git
