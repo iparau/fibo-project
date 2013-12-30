@@ -1,12 +1,12 @@
-[submodule "lib/core"]
-	path = lib/core
-	url = ../modules/lib_core
-[submodule "lib/cppunit"]
-	path = lib/cppunit
+[submodule "lib_cppunit"]
+	path = lib_cppunit
 	url = ../modules/lib_cppunit
-[submodule "lib/xerces"]
-	path = lib/xerces
+[submodule "lib_xerces"]
+	path = lib_xerces
 	url = ../modules/lib_xerces
+[submodule "lib_core"]
+	path = lib_core
+	url = ../modules/lib_core
 [submodule "Fibonacci"]
 	path = Fibonacci
 	url = ../modules/Fibonacci

@@ -19,9 +19,9 @@ dependancies = {
 #the list contains the build information for the module
 #<module_to_build> contains the path, the project file, enable build, use Qt make or vcproj make, enable build translations	(qt only), copy brand resources (for vcproj make)
 modules_list = {
-	'lib_cppunit' : [('lib/cppunit', 'lib_cppunit.pro', True, True, False, False)],
-	'lib_xerces' :  [('lib/xerces', 'lib_xerces.pro', True, True, False, False)],
-	'lib_core' : [('lib/core', 'lib_core.pro', True, True, False, False)],
+	'lib_cppunit' : [('lib_cppunit', 'lib_cppunit.pro', True, True, False, False)],
+	'lib_xerces' :  [('lib_xerces', 'lib_xerces.pro', True, True, False, False)],
+	'lib_core' : [('lib_core', 'lib_core.pro', True, True, False, False)],
 	'fibonacci' : [('Fibonacci', 'fibonacci.pro', True, True, False, False),
 			('', 'Fibonacci.pro', False, True, False, False)],
 	'fibonaccitest' : [('FibonacciTest', 'fibonaccitest.pro', True, True, False, False),

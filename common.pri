@@ -48,9 +48,9 @@ DEPENDPATH *= .
 # Read from environment variable
 CTC_ROOT=$$(CTC_ROOT)
 
-LIB_CORE_DIR		= $$CTC_ROOT/lib/core
-LIB_CPPUNIT_DIR		= $$CTC_ROOT/lib/cppunit
-LIB_XERCES_DIR		= $$CTC_ROOT/lib/xerces
+LIB_CORE_DIR		= $$CTC_ROOT/lib_core
+LIB_CPPUNIT_DIR		= $$CTC_ROOT/lib_cppunit
+LIB_XERCES_DIR		= $$CTC_ROOT/lib_xerces
 APP_FIBO_DIR		= $$CTC_ROOT/Fibonacci
 APP_FIBOTEST_DIR	= $$BYS_ROOT/FibonacciTest
 
