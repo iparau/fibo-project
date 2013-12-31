@@ -1,8 +1,10 @@
 /WinMakefile
+/LinMakefile
 /*.sln
 /_distrib
 
 /*.opensdf
 /*.sdf
 /*.suo
+/*.user
 /ipch

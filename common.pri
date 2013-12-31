@@ -21,7 +21,6 @@ unix {
 
 unix:!macx {
 	DEFINES *= PLATFORM_LINUX
-	LIBS *= -lXfixes -lXtst
 }
 
 macx {
@@ -51,8 +50,8 @@ CTC_ROOT=$$(CTC_ROOT)
 LIB_CORE_DIR		= $$CTC_ROOT/lib_core
 LIB_CPPUNIT_DIR		= $$CTC_ROOT/lib_cppunit
 LIB_XERCES_DIR		= $$CTC_ROOT/lib_xerces
-APP_FIBO_DIR		= $$CTC_ROOT/Fibonacci
-APP_FIBOTEST_DIR	= $$CTC_ROOT/FibonacciTest
+APP_FIBO_DIR		= $$CTC_ROOT/fibonacci
+APP_FIBOTEST_DIR	= $$CTC_ROOT/fibonaccitest
 
 LIB_CORE_DIR_INC	= $$LIB_CORE_DIR/incl
 LIB_CPPUNIT_DIR_INC	= $$LIB_CPPUNIT_DIR/incl

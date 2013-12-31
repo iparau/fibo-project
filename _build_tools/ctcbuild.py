@@ -36,7 +36,8 @@ builded = {
 	'lib_core' : False,
 	'libs' : False,
 	'fibonacci' : False,
-	'fibonaccitest' : False
+    'fibonaccitest' : False,
+    'all' : False
 	}
 
 #build flag, win32 name, mac name, linux name, enable upx, enable sign
