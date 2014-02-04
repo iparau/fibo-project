@@ -604,6 +604,7 @@ producttobuild = ''
 
 CTC_ROOT = ''
 current_os = 'nt'
+QTDIR = os.getenv("QTDIR")
 
 mode_debug = 'debug'
 mode_release = 'release'
@@ -670,18 +671,19 @@ for argc in sys.argv:
 print ''
 
 ENVPATH_SEPARATOR = os.pathsep
-QTDIR = os.getenv("QTDIR")
-QMAKE = QTDIR + os.sep + "bin" + os.sep + "qmake"
+
 
 if os.name == "posix":
 	if sys.platform == "darwin":
 		print 'Identified OSTYPE: Mac OSX'
 		MAKEFILENAME='MacMakefile'
 		current_os = 'mac'
+		QTDIR = os.getenv("QTDIR")
 	else:
 		print 'Identified OSTYPE: Linux'
 		MAKEFILENAME='LinMakefile'
 		current_os = 'linux'
+		QTDIR = '/usr'
 	MAKE='make -f '
 
 else:
@@ -693,6 +695,8 @@ else:
 	else:
 		print "Unknown OSTYPE: Build Cancelled!"
 		sys.exit(1)
+
+QMAKE = QTDIR + os.sep + "bin" + os.sep + "qmake"
 
 active_params()
 
