@@ -211,7 +211,7 @@ def do_module_build(moduletobuild):
 		if moduletobuild in modules_list.keys():
 			buildMakeFile = MAKEFILENAME
 			vcBuildCmd = 'MSBuild.exe '
-			vcBuildParam = '/m:4 /Verbosity:normal /DetailedSummary'
+			vcBuildParam = '/m:2 /Verbosity:normal /DetailedSummary'
 
 			for moduleitem in modules_list[moduletobuild]:
 				subdir = CTC_ROOT + os.sep + moduleitem[0]
@@ -257,7 +257,7 @@ def do_module_build(moduletobuild):
 								cmdline += ' && ' + MAKE + buildMakeFile + ' debug'
 
 								if current_os != "nt":
-									cmdline += ' -j4'
+									cmdline += ' -j2'
 
 								do_exec(cmdline, True)
 							else:
@@ -266,7 +266,7 @@ def do_module_build(moduletobuild):
 								cmdline += ' && ' + MAKE + buildMakeFile + ' release'
 
 								if current_os != "nt":
-									cmdline += ' -j4'
+									cmdline += ' -j2'
 
 								do_exec(cmdline, True)
 
@@ -279,7 +279,7 @@ def do_module_build(moduletobuild):
 							cmdline += ' && ' + MAKE + buildMakeFile + ' debug'
 
 							if current_os != "nt":
-								cmdline += ' -j4'
+								cmdline += ' -j2'
 
 							do_exec(cmdline, True)
 
@@ -287,7 +287,7 @@ def do_module_build(moduletobuild):
 							cmdline += ' && ' + MAKE + buildMakeFile + ' release'
 
 							if current_os != "nt":
-								cmdline += ' -j4'
+								cmdline += ' -j2'
 
 							do_exec(cmdline, True)
 
