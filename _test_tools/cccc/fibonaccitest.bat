@@ -1,0 +1,1 @@
+cccc.exe --outdir=./_test_tools/cccc/fibonaccitest --xml_outfile=./_test_tools/cccc/fibonaccitest/fibonaccitest.xml --html_outfile=./_test_tools/cccc/fibonaccitest/fibonaccitest.html ./lib_core/srce/*.cpp ./lib_core/incl/*.h ./fibonaccitest/srce/*.cpp ./fibonaccitest/incl/*.h

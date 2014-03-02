@@ -1,0 +1,2 @@
+#!/bin/bash
+cccc --outdir=./_test_tools/cccc/fibonacci --xml_outfile=./_test_tools/cccc/fibonacci/fibonacci.xml --html_outfile=./_test_tools/cccc/fibonacci/fibonacci.html ./lib_core/srce/*.cpp ./lib_core/incl/*.h ./fibonacci/srce/*.cpp
