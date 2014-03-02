@@ -52,7 +52,7 @@ PROJECT_LOGO           =
 # If a relative path is entered, it will be relative to the location 
 # where doxygen was started. If left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = ./docs
+OUTPUT_DIRECTORY       = _test_tools/doxygen/docs
 
 # If the CREATE_SUBDIRS tag is set to YES, then doxygen will create 
 # 4096 sub-directories (in 2 levels) under the output directory of each output 
@@ -657,7 +657,8 @@ WARN_LOGFILE           =
 # directories like "/usr/src/myproject". Separate the files or directories 
 # with spaces.
 
-INPUT                  = ./../..
+INPUT                  = fibonacci \
+                         lib_core
 
 # This tag can be used to specify the character encoding of the source files 
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is 
@@ -719,13 +720,13 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is 
 # run.
 
-EXCLUDE                = ./../../_distrib \
-                         ./../../.git \
-                         ./../../lib_cppunit \
-                         ./../../lib_xerces \
-                         ./../../fibonaccitest \
-                         ./../../_test_tools \
-                         ./../../_build_tools
+EXCLUDE                = _distrib \
+                         .git \
+                         lib_cppunit \
+                         lib_xerces \
+                         fibonaccitest \
+                         _test_tools \
+                         _build_tools
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or 
 # directories that are symbolic links (a Unix file system feature) are excluded 
@@ -1525,15 +1526,15 @@ SEARCH_INCLUDES        = YES
 # contain include files that are not input files but should be processed by 
 # the preprocessor.
 
-INCLUDE_PATH           = ./../../lib_core/incl \
-                         ./../../lib_cppunit/incl \
-                         ./../../lib_xerces/incl/xercesc/dom \
-                         ./../../lib_xerces/incl/xercesc/dom/impl \
-                         ./../../lib_xerces/incl/xercesc/sax \
-                         ./../../lib_xerces/incl/xercesc/util \
-                         ./../../lib_xerces/incl/xercesc/util/MsgLoaders/InMemory \
-                         ./../../lib_xerces/incl/xercesc/validators/schema/identity \
-                         ./../../lib_xerces/incl/xercesc/util/Transcoders/IconvGNU
+INCLUDE_PATH           = lib_core/incl \
+                         lib_cppunit/incl \
+                         lib_xerces/incl/xercesc/dom \
+                         lib_xerces/incl/xercesc/dom/impl \
+                         lib_xerces/incl/xercesc/sax \
+                         lib_xerces/incl/xercesc/util \
+                         lib_xerces/incl/xercesc/util/MsgLoaders/InMemory \
+                         lib_xerces/incl/xercesc/validators/schema/identity \
+                         lib_xerces/incl/xercesc/util/Transcoders/IconvGNU
 
 # You can use the INCLUDE_FILE_PATTERNS tag to specify one or more wildcard 
 # patterns (like *.h and *.hpp) to filter out the header-files in the 
@@ -1698,7 +1699,7 @@ DOT_NUM_THREADS        = 2
 # the DOTFONTPATH environment variable or by setting DOT_FONTPATH to the 
 # directory containing the font.
 
-DOT_FONTNAME           = FreeSans.ttf
+DOT_FONTNAME           = Helvetica
 
 # The DOT_FONTSIZE tag can be used to set the size of the font of dot graphs. 
 # The default size is 10pt.
